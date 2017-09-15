@@ -1,2 +1,31 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+.column {
+}
+
+.content {
+  min-height: 92vh;
+}
+
+.side {
+  background-color: #333;
+}
+
+.header {
+  background-color: #262626;
+  color: white;
+  height: 10vh;
+}
+
+.title {
+  color: white;
+}
+
+.details {
+  height: 10px;
+}
+
+.card {
+  margin: 5px;
+}
