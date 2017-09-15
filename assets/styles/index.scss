@@ -9,8 +9,13 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .content {
-  color: white;
+  color: blue;
   min-height: 92vh;
+}
+
+.menu {
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .side {
@@ -35,4 +40,11 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   display: flex;
   flex-direction: column;
   margin: 5px;
+}
+
+.likes {
+  border-radius: 3px;
+  bottom: 5px;
+  left: 5px;
+  position: absolute;
 }
