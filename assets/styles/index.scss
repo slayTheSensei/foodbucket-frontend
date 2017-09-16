@@ -12,13 +12,17 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   min-height: 92vh;
 }
 
+.avatar {
+  border-image: initial;
+  border-radius: 42px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 .menu {
   cursor: pointer;
   font-size: 18px;
-}
-
-.menu-list {
-  color: #333;
 }
 
 .is-fullwidth {
@@ -27,12 +31,13 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 .side {
   background-color: #333;
+
 }
 
 .header {
-  background-color: #262626;
+  background-color: #333;
   color: white;
-  height: 10vh;
+  height: 18vh;
 }
 
 .title {
@@ -44,6 +49,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .card {
+  border-radius: 3px;
   margin: 5px;
 }
 
