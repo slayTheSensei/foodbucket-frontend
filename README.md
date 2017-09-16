@@ -6,6 +6,7 @@
 # Technologies Used
 Create handlebars template for restaurant lists
 Build Database in MongoDB
+Yelp! API Documentation. https://www.yelp.com/developers/documentation/v3
 
 # Project Planning
 
@@ -24,13 +25,16 @@ https://trello.com/c/GrZbNNQh/6-create-erbs
 https://trello.com/c/geMEGeks/7-create-wireframes
 
 # Links
-*deployed front-end app
+deployed front-end app
 
-*front-end repo
+front-end repo
 https://github.com/Team-Agile2/foodbucket-frontend
 
-*back-end repo
+back-end repo
 https://github.com/Team-Agile2/foodbucket-backend
+
+Heroku link
+https://foodbucket.herokuapp.com/
 
 # User Stories
 
