@@ -12,32 +12,28 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   min-height: 92vh;
 }
 
+// profile pic
 .avatar {
   border-image: initial;
   border-radius: 42px;
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 10px;
 }
 
-.menu {
-  cursor: pointer;
+// nav tabs
+.navbar-item {
+  display: flex;
   font-size: 18px;
-}
-
-.is-fullwidth {
-  font-size: 14px;
-}
-
-.side {
-  background-color: #333;
-
+  left: 10%;
+  padding: 5px 150px;
+  position: relative;
 }
 
 .header {
   background-color: #333;
-  color: white;
-  height: 18vh;
+  border-radius: 3px;
+  height: 15vh;
 }
 
 .title {
@@ -49,18 +45,22 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .card {
+  // background-color: #391484;
   border-radius: 3px;
   margin: 5px;
 }
 
+// Likes button
 .likes {
   border-radius: 3px;
-  bottom: 5px;
-  left: 5px;
+  bottom: 1px;
+  left: 2px;
   position: absolute;
 }
 
+// Delete button
 .delete {
   position: absolute;
   right: 10px;
+  top: 10px;
 }
