@@ -4,18 +4,25 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-.columns {
-  // flex-wrap: wrap;
-}
+// .columns {
+//
+// }
 
 .content {
-  color: blue;
   min-height: 92vh;
 }
 
 .menu {
   cursor: pointer;
   font-size: 18px;
+}
+
+.menu-list {
+  color: #333;
+}
+
+.is-fullwidth {
+  font-size: 14px;
 }
 
 .side {
@@ -37,8 +44,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   margin: 5px;
 }
 

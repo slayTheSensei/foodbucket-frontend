@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>FoodBucket</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>FoodBucket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-      <link rel="stylesheet" type="text/css" href="../css/aside.css">
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    </head>
-    <body class="container-fluid">
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/aside.css">
+
+</head>
+
+<body class="container-fluid">
 
 
-      <!-- HEADER START -->
+  <!-- HEADER START -->
   <div class="columns">
     <nav class="column nav header">
       <div class="nav-left">
@@ -33,16 +35,16 @@
 
   <!--LAYOUT START -->
   <div class="columns">
-  <div class="column is-1 side content">
-    <aside class="menu">
-      <div class="menu-list">
-        <button id="browse">Browse</button>
-        <button id="myBucket">My Bucket</button>
-        <button id="myFeed">My Feed</button>
-      </div>
-    </aside>
-  </div>
-  <div class="column dash content">
+    <div class="column is-1 side content">
+      <aside class="menu">
+        <div class="menu-list">
+          <button id="browse" class="button is-fullwidth">Browse</button>
+          <button id="myBucket" class="button is-fullwidth">My Bucket</button>
+          <button id="myFeed" class="button is-fullwidth">My Feed</button>
+        </div>
+      </aside>
+    </div>
+    <div class="column dash content">
       <!-- LAYOUT END -->
 
       <!-- CARD START -->
@@ -135,7 +137,7 @@
             </div>
             <div class="card-content details">
               <div class="panel-block-item">
-                  <button class="likes">Likes</button>
+                <button class="likes">Likes</button>
               </div>
             </div>
           </div>
@@ -144,4 +146,5 @@
       </div>
     </div>
   </div>
+
 </html>
