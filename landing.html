@@ -7,51 +7,50 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Do not add `script` tags-->
-  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/aside.css">
-
-<!-- LANDING VIEW -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
 </head>
 <body class="fluid-container">
-  <section class="hero is-primary is-fullheight header-image">
-  <div class="hero-head">
-    <header class="nav">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item" href="../index.html">
-            <img src="../images/bulma-white.png" alt="FoodBucket" class="title">
-          </a>
-        </div>
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <div class="nav-right nav-menu">
-          <a class="nav-item is-active">
-            Home
-          </a>
-          <a class="nav-item">
-            Documentation
-          </a>
-          <span class="nav-item">
-          </span>
-        </div>
+
+  <!-- NAVBAR -->
+  <section class="hero is-fullheight">
+    <div class="hero-head">
+  <header class="nav">
+    <div class="container">
+      <div class="nav-left">
       </div>
-    </header>
-  </div>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="nav-right nav-menu">
+        <a class="nav-item">
+          How it works
+        </a>
+        <a class="nav-item">
+          Documentation
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- NAVBAR END -->
+
+<!-- LANDING VIEW -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title is-2">
-        Experience the best food in your city
-      </h1>
-      <h2 class="subtitle is-5">
-        A bucket list for food
+      <figure>
+        <img src="assets/images/foodbucket_logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="301px" height="230px">
+      </figure>
+      <h2 class="">
+        Eat Your Ass Off Before You Die
       </h2>
-        <button class="button is-warning is-outline login-button">Start Your Bucket Today</button>
+      <h2 class="subtitle is-3">
+      </h2><br>
+        <button class="button is-info login-button is-large">Get Started</button>
     </div>
   </div>
 </section>
@@ -59,13 +58,12 @@
   <nav class="level">
   </nav>
 </div>
-<div class="section main">
+<div class="section hero is-small is-info">
   <div class="container">
     <div class="columns">
       <div class="column is-4">
         <div class="panel">
           <div class="panel-block section has-text-centered">
-            <!-- <p class="has-text-centered"><i class="fa fa-camera-retro icon-block"></i></p> -->
             <br>
             <p class="subtitle is-3">Search for restuatants in your city</p>
             <br>
@@ -75,18 +73,15 @@
       <div class="column is-4">
         <div class="panel">
           <div class="panel-block section">
-            <!-- <p class="has-text-centered"><i class="fa fa-bar-chart icon-block"></i></p> -->
             <br>
             <p class="subtitle is-3">Add restaurants to your bucket list</p>
             <br>
           </div>
         </div>
-
       </div>
       <div class="column is-4">
         <div class="panel">
           <div class="panel-block section">
-            <!-- <p class="has-text-centered"><i class="fa fa-cloud icon-block"></i></p> -->
             <br>
             <p class="subtitle is-3">Make a reservation</p>
             <br>
@@ -99,5 +94,90 @@
 </div>
 <!-- LANDING VIEW END -->
 
+
+<!-- SIGN UP VIEW -->
+<section id="sign-up-view" class="hero is-medium is-light is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+          <form id="sign-up" class="box">
+            <label class="label">Email</label>
+            <p class="control">
+              <input class="input email-input" type="text" name="credentials[email]" value="" placeholder="email">
+            </p>
+            <hr>
+            <label class="label">Password</label>
+            <p class="control">
+              <input class="input password-input" type="password" name="credentials[password]" value="" placeholder="password">
+            </p>
+            <label class="label">Confirm Password</label>
+            <p class="control">
+              <input class="input password-input" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+            </p>
+            <hr>
+            <p class="control">
+              <button type="submit" class="button is-primary">Register</button>
+              <button class="button is-default to-landing">Cancel</button>
+            </p>
+          </form>
+          <div class="section member">
+            <p class="has-text-centered">
+              <a id="to-sign-in" href="#">Already a member?</a><br>
+              <!-- <a href="#">Need help?</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END OF SIGN UP VIEW -->
+
+<!-- SIGN IN VIEW -->
+    <section class="hero is-medium">
+      <div class="hero-heading">
+        <div class="section has-text-centered">
+          <h1 class="title">FoodBucket</h1>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <h1 class="avatar has-text-centered section">
+                </h1>
+              <!-- START OF LOGIN FORM -->
+              <form id="sign-in" class="login-form">
+                <p class="control has-icon has-icon-right">
+                  <input class="input email-input" type="text" name="credentials[email]" value="" placeholder="email">
+                  <span class="icon user">
+                      <i class="fa fa-user"></i>
+                    </span>
+                </p>
+                <p class="control has-icon has-icon-right">
+                  <input class="input password-input" type="password" name="credentials[password]" value="" placeholder="password">
+                  <span class="icon user">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                </p>
+                <p class="control login">
+                  <button class="button is-success is-outlined is-large is-fullwidth">Login</button>
+                </p>
+              </form>
+              <!-- END OF LOGIN FORM -->
+              <div class="section forgot-password">
+                <p class="has-text-centered">
+                  <a class="to-landing" href="#">Cancel</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- END OF SIGN IN VIEW -->
 </body>
 </html>
