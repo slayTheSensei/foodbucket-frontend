@@ -41,6 +41,7 @@ const toDash = function () {
 }
 
 const addHandlers = () => {
+  tolanding()
   $('#get-list').on('click', onGetList)
   $('.to-signup').on('click', toSignUp)
   $('.to-signin').on('click', toSignIn)

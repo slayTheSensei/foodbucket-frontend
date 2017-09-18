@@ -33,22 +33,22 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   height: 10vh;
 }
 
-.title {
-  color: white;
+.blue {
+  background-color: $blue;
 }
 
 .details {
   height: 10px;
 }
 
-.card {
-  border-radius: 3px;
-  margin: 5px;
+.dash {
+  // border-radius: 3px;
+  margin: 0 10px;
 }
 
 // Likes button
 .likes {
-  border-radius: 3px;
+  // border-radius: 3px;
   bottom: 1px;
   left: 2px;
   position: absolute;

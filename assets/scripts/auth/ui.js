@@ -18,6 +18,7 @@ const signUpSuccess = (data) => {
   } else {
     console.log('Success')
   }
+  list.toSignIn()
 }
 
 const failure = (error) => {

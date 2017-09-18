@@ -1,51 +1,216 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <title>FoodBucket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <title>FoodBucket</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <!-- Do not add `link` tags-->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-  <!-- Do not add `script` tags-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-  <!-- <link rel="stylesheet" type="text/css" href="../css/aside.css"> >
-
-</head>
-
-<body class="container-fluid">
+    <!-- Do not add `script` tags-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body class="fluid-container">
 
 
-  <!-- HEADER START -->
-  <div class="columns">
-    <nav class="column nav header">
-      <div class="nav-left">
-        <h1 class="nav-item title is-4">Food Bucket</h1>
-        <h1 class="nav-item nav-right"></h1>
-        <img src="https://placehold.it/64x64" class="avatar" alt="profile picture">
+  <!-- LANDING VIEW WRAPPER -->
+  <div id="landing-view">
+    <!-- NAVBAR -->
+    <section class="hero is-fullheight">
+    <header class="nav">
+      <div class="container">
+        <nav class="nav-left">
+          <!-- <a class="nav-item title is-3" href="#">Food Bucket</a> -->
+        </nav>
+        <div class="nav-right is-large">
+          <a class="nav-item">
+          </a>
+          <a class="nav-item">
+            Documentation
+          </a>
+        </div>
       </div>
-    </nav>
-  </div>
-  <!-- HEADER END -->
+    </header>
 
-  <!-- NAVBAR START -->
-  <nav class="navbar is-transparent">
-    <div id="navMenu" class="navbar-menu">
-      <div id="browse" class="navbar-item is-hoverable">
-        <a>Browse</a>
-      </div>
-      <div id="myBucket" class="navbar-item is-hoverable">
-        <a>My Bucket</a>
-      </div>
-      <div id="myFeed" class="navbar-item is-hoverable">
-        <a>My Feed</a>
+  <!-- NAVBAR END -->
+
+  <!-- LANDING VIEW -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <figure>
+          <img src="assets/images/foodbucket_logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="301px" height="230px">
+        </figure>
+        <h2 class="">
+          Eat Your Ass Off Before You Die
+        </h2>
+        <h2 class="subtitle is-3">
+        </h2><br>
+          <button class="button is-info login-button to-signup">Get Started</button>
       </div>
     </div>
-  </nav>
+  </section>
+  <!-- <div class="hero-cta">
+    <nav class="level">
+    </nav>
+  </div> -->
+  <!-- <div class="section hero is-small is-info">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <div class="panel">
+            <div class="panel-block section has-text-centered">
+              <br>
+              <p class="subtitle is-3">Search for restuatants in your city</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="panel">
+            <div class="panel-block section">
+              <br>
+              <p class="subtitle is-3">Add restaurants to your bucket list</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="panel">
+            <div class="panel-block section">
+              <br>
+              <p class="subtitle is-3">Make a reservation</p>
+              <br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- LANDING VIEW END -->
+  </div>
+  <!-- LANDING WRAPPER END -->
+
+
+  <!-- SIGNUP VIEW WRAPPER -->
+  <div id="signup-view">
+  <!-- SIGN UP VIEW -->
+  <section id="sign-up-view" class="hero is-fullheight is-light is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-4 is-offset-4 has-text-centered">
+            <h1>Sign Up</h1><br>
+            <form id="sign-up" class="box">
+              <label class="label">Email</label>
+              <p class="control">
+                <input class="input email-input" type="text" name="credentials[email]" value="" placeholder="email">
+              </p>
+              <hr>
+              <label class="label">Password</label>
+              <p class="control">
+                <input class="input password-input" type="password" name="credentials[password]" value="" placeholder="password">
+              </p>
+              <label class="label">Confirm Password</label>
+              <p class="control">
+                <input class="input password-input" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+              </p>
+              <hr>
+              <p class="control">
+                <button type="submit" class="button is-primary">Register</button>
+                <button class="button is-default to-landing">Cancel</button>
+              </p>
+            </form>
+            <div class="section member">
+              <p class="has-text-centered">
+                <a class="to-signin" href="#">Already a member?</a><br>
+                <!-- <a href="#">Need help?</a> -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF SIGN UP VIEW -->
+  </div>
+  <!-- SIGNUP VIEW WRAPPER END-->
+
+  <!-- SIGNIN VIEW WRAPPER -->
+  <div id="signin-view">
+  <!-- SIGN IN VIEW -->
+      <section class="hero is-fullheight">
+        <div class="hero-heading">
+          <div class="section has-text-centered">
+            <h1 class="">Sign In</h1>
+          </div>
+        </div>
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <h1 class="avatar has-text-centered section">
+                  </h1>
+                <!-- START OF LOGIN FORM -->
+                <form id="sign-in" class="login-form">
+                  <p class="control has-icon has-icon-right">
+                    <input class="input email-input" type="text" name="credentials[email]" value="" placeholder="email">
+                    <span class="icon user">
+                        <i class="fa fa-user"></i>
+                      </span>
+                  </p>
+                  <p class="control has-icon has-icon-right">
+                    <input class="input password-input" type="password" name="credentials[password]" value="" placeholder="password">
+                    <span class="icon user">
+                        <i class="fa fa-lock"></i>
+                      </span>
+                  </p>
+                  <p class="control login">
+                    <button class="button is-success is-outlined is-large is-fullwidth">Login</button>
+                  </p>
+                </form>
+                <!-- END OF LOGIN FORM -->
+                <div class="section forgot-password">
+                  <p class="has-text-centered">
+                    <a class="to-landing" href="#">Cancel</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- END OF SIGN IN VIEW -->
+  </div>
+  <!-- SIGNIN VIEW WRAPPER END -->
+
+  <!-- LIST CONTENT -->
+    <section id="dash-view" class="hero is-fullheight">
+      <div class="hero-head">
+        <header class="nav">
+          <div class="container">
+            <nav class="nav-left">
+              <a class="nav-item title" href="#">Food Bucket</a>
+            </nav>
+            <div class="nav-right is-large">
+              <a class="nav-item">
+              </a>
+              <a class="nav-item">
+                Documentation
+              </a>
+            </div>
+          </div>
+        </header>
+  </div>
+    <!-- <button id="get-list" class="button is-info is-large">Get List</button> -->
+    <div class="tabs is-centered">
+      <ul>
+        <li class="is-active"><a>My Bucket</a></li>
+        <li><a>Browse</a></li>
+      </ul>
+    </div>
   <!-- NAVBAR END -->
 
   <!--LAYOUT START -->
@@ -58,8 +223,8 @@
 
   <!-- CARD START -->
   <div class="container section">
-    <div class="columns">
-      <div class="card is-4">
+    <div class="columns is-4 dash">
+      <div class="card">
         <a class="delete"></a>
         <header class="card-header">
           <p class="card-header-title">North</p>
@@ -67,14 +232,49 @@
         <div class="card-image">
           <img src="https://placehold.it/1280x960" alt="Image">
         </div>
-        <div class="card-content details">
+        <!-- <div class="card-content details">
           <div class="panel-block-item">
-            <button class="button likes is-medium is-info">Likes</button>
+            <button class="button likes is-medium is-primary">Likes</button>
           </div>
-        </div>
+        </div> -->
       </div>
+
+      <div class="card">
+        <a class="delete"></a>
+        <header class="card-header">
+          <p class="card-header-title">Slow Road</p>
+        </header>
+        <div class="card-image">
+          <img src="https://placehold.it/1280x960" alt="Image">
+        </div>
+        <!-- <div class="card-content details">
+          <div class="panel-block-item">
+            <button class="button likes is-medium is-primary">Likes</button>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="card">
+        <a class="delete"></a>
+        <header class="card-header">
+          <p class="card-header-title">New River</p>
+        </header>
+        <div class="card-image">
+          <img src="https://placehold.it/1280x960" alt="Image">
+        </div>
+        <!-- <div class="card-content details">
+          <div class="panel-block-item">
+            <button class="button likes is-medium is-primary">Likes</button>
+          </div>
+        </div> -->
+      </div>
+
     </div>
   </div>
   <!-- CARD END -->
+    <div id="list-content"></div>
+    </section>
+  <!-- LIST CONTENT END -->
 
+  </body>
 </html>
