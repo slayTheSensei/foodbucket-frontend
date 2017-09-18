@@ -4,17 +4,19 @@
 # Description of Application
 
 # Technologies Used
-Create handlebars template for restaurant lists
-Build Database in MongoDB
+Used HTML for structuring SPA app.
+Used Bulma CSS framework to style layout.
+Created handlebars template for restaurant lists.
+Build Database in MongoDB and Express API.
 Yelp! API Documentation. https://www.yelp.com/developers/documentation/v3
 
 # Project Planning
+The project planning began with whiteboarding. Drawing out the tables and charting down the attributes for each table.
 
 https://trello.com/c/trHi8zHW/25-first-day-mock-up
 
 # Unsolved Problems
-
-# Install Instructions
+Ran into issue connecting to Yelp API after the setup. Due to the amount of time left to finish project, an alternative route was just to append the data.
 
 # ERD
 https://trello.com/c/GrZbNNQh/6-create-erbs
@@ -27,10 +29,10 @@ https://trello.com/c/geMEGeks/7-create-wireframes
 # Links
 deployed front-end app
 
-front-end repo
+GitHub front-end repo
 https://github.com/Team-Agile2/foodbucket-frontend
 
-back-end repo
+GitHub back-end repo
 https://github.com/Team-Agile2/foodbucket-backend
 
 Heroku link

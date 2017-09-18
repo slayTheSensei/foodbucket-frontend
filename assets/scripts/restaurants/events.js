@@ -2,7 +2,7 @@
 
 const api = require('./api.js')
 const ui = require('./ui.js')
-const getFormFields = require('../../../lib/get-form-fields')
+const getFormFields = require('./../../../lib/get-form-fields')
 const app = require('../app.js')
 
 const onGetRestaurant = (event, data) => {
