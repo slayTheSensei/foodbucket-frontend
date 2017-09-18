@@ -1,18 +1,20 @@
 {{#each user as |user|}}
 
-<div class="card column is-4">
-  <header class="card-header">
-    <p class="card-header-title">{{user.list.yelp_id.name}}</p>
-    <span class="card-header-icon timestamp">2m</span>
-  </header>
-  <div class="card-image">
-    <img src={{user.list.yelp_id.image_url}} alt="Image">
-  </div>
-  <div class="card-content details">
-    <div class="panel-block-item">
-      <span class="likes">303k Likes</span>
+<div class="container section" data-id="{{user.id}}">
+  <div class="columns">
+    <div class="card is-4">
+      <a class="delete"></a>
+      <header class="card-header">
+        <p class="card-header-title">{{user.id}}</p>
+      </header>
+      <div class="card-image">
+        <img src="https://placehold.it/1280x960" alt="Image">
+      </div>
+      <div class="card-content details">
+        <div class="panel-block-item">
+          <button class="button likes is-medium is-info">Likes</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 {{/each}}

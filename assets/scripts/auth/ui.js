@@ -2,6 +2,7 @@
 
 const user = require('../lists/events.js')
 const app = require('../app.js')
+const list = require('../lists/events.js')
 
 const success = (data) => {
   if (data) {
@@ -27,6 +28,7 @@ const signInSuccess = (data) => {
   app.user = data.user
   console.log(app.user)
   console.log(data)
+  list.toDash()
 
   // location.href = 'http://localhost:7165/profile.html'
 }
@@ -34,7 +36,7 @@ const signInSuccess = (data) => {
 const signOutSuccess = () => {
   console.log('User signed out successfully')
   app.user = null
-  location.href = 'http://localhost:7165/index.html'
+  // location.href = 'http://localhost:7165/index.html'
 }
 
 module.exports = {
