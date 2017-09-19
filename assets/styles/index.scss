@@ -31,8 +31,10 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 .header {
   background-color: #333;
-  border-radius: 3px;
-  height: 10vh;
+}
+
+.card {
+  margin: 5px;
 }
 
 .blue {

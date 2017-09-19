@@ -26,7 +26,7 @@ const toSignIn = function () {
   $('#signup-view').hide()
 }
 
-const tolanding = function () {
+const toLanding = function () {
   $('#landing-view').show()
   $('#signin-view').hide()
   $('#dash-view').hide()
@@ -41,10 +41,11 @@ const toDash = function () {
 }
 
 const addHandlers = () => {
-  tolanding()
+  toLanding()
   $('#get-list').on('click', onGetList)
   $('.to-signup').on('click', toSignUp)
   $('.to-signin').on('click', toSignIn)
+  $('.to-landing').on('click', toLanding)
 }
 
 module.exports = {
